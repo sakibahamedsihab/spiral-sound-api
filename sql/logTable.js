@@ -11,6 +11,9 @@ async function viewAllProducts() {
   try {
     const products = await db.all("SELECT * FROM products");
     console.table(products);
+
+    const users = await db.all(`SELECT * FROM users`);
+    console.table(users);
   } catch (err) {
     console.error("Error fetching products:", err.message);
   } finally {

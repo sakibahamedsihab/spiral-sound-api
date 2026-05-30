@@ -1,4 +1,4 @@
-import { getDBConnection } from "../db.js";
+import { getDBConnection } from "../db/db.js";
 
 export async function getGenres(req, res) {
   try {
